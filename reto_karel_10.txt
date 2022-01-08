@@ -1,0 +1,37 @@
+BEGINNING-OF-PROGRAM
+	DEFINE-NEW-INSTRUCTION turnright AS
+	BEGIN
+		turnleft;
+		turnleft;
+		turnleft
+    	END;
+	DEFINE-NEW-INSTRUCTION turnright AS
+	BEGIN
+		
+    	END;
+	DEFINE-NEW-INSTRUCTION location AS
+	BEGIN
+		WHILE front-is-blocked DO
+		BEGIN
+			turnleft
+		END
+	END;
+	DEFINE-NEW-INSTRUCTION find_exit AS
+	BEGIN
+		location;
+		IF front-is-clear THEN
+		BEGIN
+			move
+		END
+		IF right-is-blocked AND left is blocked THEN
+		BEGIN
+			move
+		END
+
+ 
+	END;
+ 	BEGINNING-OF-EXECUTION
+
+  		turnoff
+ 	END-OF-EXECUTION
+END-OF-PROGRAM
